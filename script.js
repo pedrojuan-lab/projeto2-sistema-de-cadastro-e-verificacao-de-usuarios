@@ -2,7 +2,7 @@ let nomedapessoa = prompt("Digite seu nome: ")
 let idadedapessoa = parseInt(prompt("Digite sua idade: "))
 const senha = prompt("Digite sua senha: ")
 
-if (idade >=13) {
+if (idadedapessoa >=13) {
     alert(`
         --- Cadastro de Usuário ---
         Digite seu nome: ${nomedapessoa}
@@ -12,13 +12,13 @@ if (idade >=13) {
 
     let nomeVerificada = prompt("Digite seu nome: ")
     let senhaVerificada = prompt("Digite sua senha: ")
-    if (nomeVerificada === nome && senhaVerificada === senha)
+    if (nomeVerificada === nomedapessoa && senhaVerificada === senha)
         //ve se a senha e o nome são os mesmos
 
         {
         alert(`
             --- Login ---
-            Login realizado com sucesso! Bem-vindo, ${nome}
+            Login realizado com sucesso! Bem-vindo, ${nomedapessoa}
             `)//avisa que conseguiu fazer o login
     } 
 
